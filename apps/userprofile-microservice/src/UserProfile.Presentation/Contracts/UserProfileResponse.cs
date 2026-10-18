@@ -12,8 +12,7 @@ public sealed record UserProfileResponse(
     string Status,
     DateTime CreatedAt,
     DateTime UpdatedAt,
-    int MessageCount,
-    DateTime? LastMessageAt)
+    int MessageCount)
 {
     public static UserProfileResponse From(UserProfile profile) => new(
         profile.Id,
@@ -25,6 +24,5 @@ public sealed record UserProfileResponse(
         profile.Status.ToString(),
         profile.CreatedAt.UtcDateTime,
         profile.UpdatedAt.UtcDateTime,
-        profile.MessageCount,
-        profile.LastMessageAt?.UtcDateTime);
+        profile.MessageCount);
 }
