@@ -1,0 +1,6 @@
+@UserProfile.Presentation_HostAddress = http://localhost:5145
+
+GET {{UserProfile.Presentation_HostAddress}}/swagger/v1/swagger.json
+Accept: application/json
+
+###
