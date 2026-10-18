@@ -54,9 +54,14 @@ public sealed class UserProfile
     {
         EnsureActive();
 
-        DisplayName = new DisplayName(displayName);
-        Bio = NormalizeBio(bio);
-        AvatarUrl = NormalizeAvatarUrl(avatarUrl);
+        // Validate everything before assigning anything, so a failure leaves the profile untouched.
+        var newDisplayName = new DisplayName(displayName);
+        var newBio = NormalizeBio(bio);
+        var newAvatarUrl = NormalizeAvatarUrl(avatarUrl);
+
+        DisplayName = newDisplayName;
+        Bio = newBio;
+        AvatarUrl = newAvatarUrl;
         UpdatedAt = now;
     }
 

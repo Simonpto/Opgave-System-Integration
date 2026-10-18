@@ -12,6 +12,7 @@ COPY ["src/UserProfile.Application/UserProfile.Application.csproj", "src/UserPro
 COPY ["src/UserProfile.Domain/UserProfile.Domain.csproj", "src/UserProfile.Domain/"]
 COPY ["src/UserProfile.Infrastructure/UserProfile.Infrastructure.csproj", "src/UserProfile.Infrastructure/"]
 COPY ["packages/Shared.Contracts/src/Shared.Contracts.csproj", "packages/Shared.Contracts/src/"]
+COPY ["packages/MessageClient/src/MessageClient.csproj", "packages/MessageClient/src/"]
 RUN dotnet restore "src/UserProfile.Presentation/UserProfile.Presentation.csproj"
 COPY . .
 WORKDIR "/src/src/UserProfile.Presentation"
