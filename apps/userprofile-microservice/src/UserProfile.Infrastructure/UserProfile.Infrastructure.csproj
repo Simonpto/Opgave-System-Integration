@@ -3,8 +3,8 @@
   <ItemGroup>
     <ProjectReference Include="..\UserProfile.Application\UserProfile.Application.csproj" />
     <ProjectReference Include="..\UserProfile.Domain\UserProfile.Domain.csproj" />
-    <ProjectReference Include="..\..\packages\MessageClient\src\MessageClient.csproj" />
-    <ProjectReference Include="..\..\packages\Shared.Contracts\src\Shared.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\..\packages\MessageClient\src\MessageClient.csproj" />
+    <ProjectReference Include="..\..\..\..\packages\Shared.Contracts\src\Shared.Contracts.csproj" />
   </ItemGroup>
 
   <ItemGroup>
