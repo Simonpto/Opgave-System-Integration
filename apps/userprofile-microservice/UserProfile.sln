@@ -19,13 +19,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserProfile.UnitTests", "te
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "packages", "packages", "{809F86A1-1C4C-B159-0CD4-DF9D33D876CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageClient", "packages\MessageClient\src\MessageClient.csproj", "{BADDA64F-684B-4AC4-A897-F830C9FD06E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageClient", "..\..\packages\MessageClient\src\MessageClient.csproj", "{BADDA64F-684B-4AC4-A897-F830C9FD06E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageClient.TestHelpers", "packages\MessageClient\test-helpers\MessageClient.TestHelpers.csproj", "{55134D74-0D8E-4D44-B6C1-034F04832F2D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageClient.TestHelpers", "..\..\packages\MessageClient\test-helpers\MessageClient.TestHelpers.csproj", "{55134D74-0D8E-4D44-B6C1-034F04832F2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageClient.Tests", "packages\MessageClient\tests\MessageClient.Tests.csproj", "{20A484BA-533B-4CC0-8DD6-F3CE7F5D2EC0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageClient.Tests", "..\..\packages\MessageClient\tests\MessageClient.Tests.csproj", "{20A484BA-533B-4CC0-8DD6-F3CE7F5D2EC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared.Contracts", "packages\Shared.Contracts\src\Shared.Contracts.csproj", "{E0BBCF47-F969-4342-B846-2C1E66C55ECA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared.Contracts", "..\..\packages\Shared.Contracts\src\Shared.Contracts.csproj", "{E0BBCF47-F969-4342-B846-2C1E66C55ECA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
