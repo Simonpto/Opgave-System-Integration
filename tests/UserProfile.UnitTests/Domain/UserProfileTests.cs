@@ -122,6 +122,19 @@ public class UserProfileTests
     }
 
     [Fact]
+    public void UpdateProfile_Throws_AndLeavesProfileUnchanged_WhenAvatarUrlIsInvalid()
+    {
+        var profile = NewProfile();
+
+        var act = () => profile.UpdateProfile("Alice B.", "New bio", "not a url", Later);
+
+        act.Should().Throw<DomainException>();
+        profile.DisplayName.Value.Should().Be("Alice");
+        profile.Bio.Should().BeNull();
+        profile.UpdatedAt.Should().Be(Now);
+    }
+
+    [Fact]
     public void UpdateProfile_Throws_WhenDeactivated()
     {
         var profile = NewProfile();
