@@ -4,3 +4,41 @@ GET {{UserProfile.Presentation_HostAddress}}/swagger/v1/swagger.json
 Accept: application/json
 
 ###
+
+POST {{UserProfile.Presentation_HostAddress}}/api/userprofiles
+Content-Type: application/json
+
+{
+  "username": "alice",
+  "displayName": "Alice",
+  "email": "alice@example.com",
+  "bio": "Hello!",
+  "avatarUrl": "https://example.com/alice.png"
+}
+
+###
+
+GET {{UserProfile.Presentation_HostAddress}}/api/userprofiles
+
+###
+
+@id = 00000000-0000-0000-0000-000000000000
+
+GET {{UserProfile.Presentation_HostAddress}}/api/userprofiles/{{id}}
+
+###
+
+PUT {{UserProfile.Presentation_HostAddress}}/api/userprofiles/{{id}}
+Content-Type: application/json
+
+{
+  "displayName": "Alice A.",
+  "bio": "Updated bio",
+  "avatarUrl": null
+}
+
+###
+
+DELETE {{UserProfile.Presentation_HostAddress}}/api/userprofiles/{{id}}
+
+###
