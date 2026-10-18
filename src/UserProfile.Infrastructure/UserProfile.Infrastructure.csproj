@@ -1,12 +1,16 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
     <ProjectReference Include="..\UserProfile.Application\UserProfile.Application.csproj" />
     <ProjectReference Include="..\UserProfile.Domain\UserProfile.Domain.csproj" />
+    <ProjectReference Include="..\..\packages\MessageClient\src\MessageClient.csproj" />
+    <ProjectReference Include="..\..\packages\Shared.Contracts\src\Shared.Contracts.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.10" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.15" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.15" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.15" />
   </ItemGroup>
 
   <PropertyGroup>
