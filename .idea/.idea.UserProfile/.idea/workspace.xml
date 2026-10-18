@@ -8,57 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67343b70-6dc7-4c44-87a8-13d117737647" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UserProfile/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/.idea/.idea.UserProfile/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UserProfile/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/.idea/.idea.UserProfile/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UserProfile/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/.idea/.idea.UserProfile/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UserProfile/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/.idea/.idea.UserProfile/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UserProfile/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/.idea/.idea.UserProfile/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserProfile.sln" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/UserProfile.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Application/Common/ConflictException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Application/Common/ConflictException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Application/Common/NotFoundException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Application/Common/NotFoundException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Application/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Application/DependencyInjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Application/UserProfile.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Application/UserProfile.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Application/UserProfiles/IUserProfileEventPublisher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Application/UserProfiles/IUserProfileEventPublisher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Application/UserProfiles/IUserProfileRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Application/UserProfiles/IUserProfileRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Application/UserProfiles/IUserProfileService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Application/UserProfiles/IUserProfileService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Application/UserProfiles/UserProfileCommands.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Application/UserProfiles/UserProfileCommands.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Application/UserProfiles/UserProfileService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Application/UserProfiles/UserProfileService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Domain/Common/DomainException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Domain/Common/DomainException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Domain/Profiles/DisplayName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Domain/Profiles/DisplayName.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Domain/Profiles/Email.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Domain/Profiles/Email.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Domain/Profiles/ProfileStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Domain/Profiles/ProfileStatus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Domain/Profiles/UserProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Domain/Profiles/UserProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Domain/Profiles/Username.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Domain/Profiles/Username.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Domain/UserProfile.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Domain/UserProfile.Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Infrastructure/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Infrastructure/DependencyInjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Infrastructure/Messaging/UserProfileEventPublisher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Infrastructure/Messaging/UserProfileEventPublisher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Infrastructure/Persistence/InMemoryUserProfileRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Infrastructure/Persistence/InMemoryUserProfileRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Infrastructure/UserProfile.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Infrastructure/UserProfile.Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Presentation/Contracts/CreateUserProfileRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Presentation/Contracts/CreateUserProfileRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Presentation/Contracts/UpdateUserProfileRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Presentation/Contracts/UpdateUserProfileRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Presentation/Contracts/UserProfileResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Presentation/Contracts/UserProfileResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Presentation/Controllers/UserProfilesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Presentation/Controllers/UserProfilesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Presentation/ErrorHandling/ExceptionToProblemDetailsHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Presentation/ErrorHandling/ExceptionToProblemDetailsHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Presentation/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Presentation/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Presentation/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Presentation/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Presentation/UserProfile.Presentation.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Presentation/UserProfile.Presentation.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Presentation/UserProfile.Presentation.http" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Presentation/UserProfile.Presentation.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Presentation/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Presentation/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.Presentation/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/src/UserProfile.Presentation/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/UserProfile.IntegrationTests/SwaggerTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/tests/UserProfile.IntegrationTests/SwaggerTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/UserProfile.IntegrationTests/UserProfile.IntegrationTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/tests/UserProfile.IntegrationTests/UserProfile.IntegrationTests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/UserProfile.IntegrationTests/UserProfileApiFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/tests/UserProfile.IntegrationTests/UserProfileApiFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/UserProfile.IntegrationTests/UserProfilesApiTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/tests/UserProfile.IntegrationTests/UserProfilesApiTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/UserProfile.UnitTests/Domain/DisplayNameTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/tests/UserProfile.UnitTests/Domain/DisplayNameTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/UserProfile.UnitTests/Domain/EmailTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/tests/UserProfile.UnitTests/Domain/EmailTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/UserProfile.UnitTests/Domain/UserProfileTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/tests/UserProfile.UnitTests/Domain/UserProfileTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/UserProfile.UnitTests/Domain/UsernameTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/tests/UserProfile.UnitTests/Domain/UsernameTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/UserProfile.UnitTests/SmokeTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/tests/UserProfile.UnitTests/SmokeTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/UserProfile.UnitTests/UserProfile.UnitTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/apps/userprofile-microservice/tests/UserProfile.UnitTests/UserProfile.UnitTests.csproj" afterDir="false" />
-    </list>
+    <list default="true" id="67343b70-6dc7-4c44-87a8-13d117737647" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,6 +30,7 @@
   }
 }]]></component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/simonpto/RiderProjects/userprofile-microservice/apps/userprofile-microservice/src/UserProfile.Infrastructure/DependencyInjection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/global.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/simonpto/RiderProjects/userprofile-microservice/src/UserProfile.Presentation/appsettings.json" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -149,7 +100,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1792338830995</updated>
-      <workItem from="1792338832142" duration="1925000" />
+      <workItem from="1792338832142" duration="2906000" />
     </task>
     <task id="LOCAL-00001" summary="chore/add-boilerplate">
       <option name="closed" value="true" />
@@ -191,7 +142,31 @@
       <option name="project" value="LOCAL" />
       <updated>1792340520725</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="chore/dockerfile">
+      <option name="closed" value="true" />
+      <created>1792340783873</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1792340783873</updated>
+    </task>
+    <task id="LOCAL-00007" summary="chore/docker-compose">
+      <option name="closed" value="true" />
+      <created>1792340939295</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1792340939295</updated>
+    </task>
+    <task id="LOCAL-00008" summary="chore/docker-compose">
+      <option name="closed" value="true" />
+      <created>1792341415813</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1792341415813</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +181,8 @@
     <MESSAGE value="feat/domain-model" />
     <MESSAGE value="feat/shared-contracts" />
     <MESSAGE value="chore/dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore/dockerfile" />
+    <MESSAGE value="chore/docker-compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore/docker-compose" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
