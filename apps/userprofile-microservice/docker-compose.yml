@@ -1,0 +1,25 @@
+# Run from this folder:  docker compose up --build
+# API: http://localhost:8000/api/userprofiles   RabbitMQ UI: http://localhost:15672 (guest/guest)
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports: ["5672:5672", "15672:15672"]
+    healthcheck:
+      # `ping` passes as soon as the Erlang node is up, before the AMQP listener accepts connections;
+      # check_port_connectivity waits for the listeners, so the service never sees "connection refused".
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "check_port_connectivity"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+  userprofile:
+    build:
+      context: ../..                                  # repo root, so packages/ is in the build context
+      dockerfile: apps/userprofile-microservice/Dockerfile
+    depends_on:
+      rabbitmq:
+        condition: service_healthy                    # don't start until the broker accepts connections
+    ports: ["8000:8080"]
+    environment:
+      - RabbitMQ__Host=rabbitmq                       # service name, not localhost; overrides RabbitMQ:Host
