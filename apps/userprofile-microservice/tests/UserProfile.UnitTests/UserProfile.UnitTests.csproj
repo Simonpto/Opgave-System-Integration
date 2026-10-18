@@ -23,6 +23,8 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\UserProfile.Application\UserProfile.Application.csproj" />
     <ProjectReference Include="..\..\src\UserProfile.Domain\UserProfile.Domain.csproj" />
+    <ProjectReference Include="..\..\src\UserProfile.Infrastructure\UserProfile.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\..\..\packages\MessageClient\test-helpers\MessageClient.TestHelpers.csproj" />
   </ItemGroup>
 
 </Project>

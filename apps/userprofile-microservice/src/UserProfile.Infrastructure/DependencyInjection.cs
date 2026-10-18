@@ -1,6 +1,7 @@
 using MessageClient;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Shared.Contracts.Events;
 using UserProfile.Application.UserProfiles;
 using UserProfile.Infrastructure.Messaging;
 using UserProfile.Infrastructure.Persistence;
@@ -15,6 +16,7 @@ public static class DependencyInjection
 
         services.AddMessageClient(configuration);
         services.AddScoped<IUserProfileEventPublisher, UserProfileEventPublisher>();
+        services.AddMessageHandler<MessagePostedEvent, MessagePostedHandler>();
 
         return services;
     }

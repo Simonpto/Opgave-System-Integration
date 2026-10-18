@@ -29,7 +29,6 @@ public class UserProfileTests
         profile.CreatedAt.Should().Be(Now);
         profile.UpdatedAt.Should().Be(Now);
         profile.MessageCount.Should().Be(0);
-        profile.LastMessageAt.Should().BeNull();
     }
 
     [Fact]
@@ -182,27 +181,14 @@ public class UserProfileTests
     }
 
     [Fact]
-    public void RegisterMessagePosted_IncrementsCountAndSetsLastMessageAt()
+    public void RegisterMessagePosted_IncrementsCount_WithoutTouchingUpdatedAt()
     {
         var profile = NewProfile();
 
-        profile.RegisterMessagePosted(Later);
-        profile.RegisterMessagePosted(Later.AddMinutes(5));
+        profile.RegisterMessagePosted();
+        profile.RegisterMessagePosted();
 
         profile.MessageCount.Should().Be(2);
-        profile.LastMessageAt.Should().Be(Later.AddMinutes(5));
         profile.UpdatedAt.Should().Be(Now);
-    }
-
-    [Fact]
-    public void RegisterMessagePosted_KeepsLatestTimestamp_WhenEventsArriveOutOfOrder()
-    {
-        var profile = NewProfile();
-
-        profile.RegisterMessagePosted(Later.AddMinutes(5));
-        profile.RegisterMessagePosted(Later);
-
-        profile.MessageCount.Should().Be(2);
-        profile.LastMessageAt.Should().Be(Later.AddMinutes(5));
     }
 }
