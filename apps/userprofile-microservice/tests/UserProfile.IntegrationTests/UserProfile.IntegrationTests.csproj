@@ -22,7 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\UserProfile.Presentation\UserProfile.Presentation.csproj" />
-    <ProjectReference Include="..\..\packages\MessageClient\test-helpers\MessageClient.TestHelpers.csproj" />
+    <ProjectReference Include="..\..\..\..\packages\MessageClient\test-helpers\MessageClient.TestHelpers.csproj" />
   </ItemGroup>
 
 </Project>
