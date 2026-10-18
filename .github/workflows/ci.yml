@@ -1,0 +1,21 @@
+name: CI
+
+# Broken contracts should fail here, not in production.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
+
+      # Docker is preinstalled on ubuntu-latest, so the Testcontainers tests run too.
+      - name: Test
+        run: dotnet test apps/userprofile-microservice/UserProfile.sln
