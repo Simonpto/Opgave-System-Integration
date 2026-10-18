@@ -3,7 +3,8 @@ using UserProfile.Domain.Common;
 namespace UserProfile.Domain.Profiles;
 
 /// <summary>
-/// A user's public profile plus activity counters fed by message events.
+/// A user's public profile plus a per-user message counter fed by MessagePostedEvent.
+/// "Last active" is deliberately not tracked here: the Presence service owns it.
 /// Time is passed in rather than read from the clock so the model stays deterministic and testable.
 /// </summary>
 public sealed class UserProfile
@@ -21,7 +22,6 @@ public sealed class UserProfile
     public DateTimeOffset UpdatedAt { get; private set; }
 
     public int MessageCount { get; private set; }
-    public DateTimeOffset? LastMessageAt { get; private set; }
 
     private UserProfile(Guid id, Username username, DisplayName displayName, Email email,
                         string? bio, string? avatarUrl, DateTimeOffset now)
@@ -93,14 +93,10 @@ public sealed class UserProfile
 
     /// <summary>
     /// Records that the user posted a message. Activity is not a profile edit, so <see cref="UpdatedAt"/> is untouched.
-    /// Events may arrive out of order, so <see cref="LastMessageAt"/> only ever moves forward.
     /// </summary>
-    public void RegisterMessagePosted(DateTimeOffset postedAt)
+    public void RegisterMessagePosted()
     {
         MessageCount++;
-
-        if (LastMessageAt is null || postedAt > LastMessageAt)
-            LastMessageAt = postedAt;
     }
 
     private void EnsureActive()

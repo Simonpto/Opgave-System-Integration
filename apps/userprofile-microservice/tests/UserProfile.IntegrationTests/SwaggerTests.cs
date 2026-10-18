@@ -1,14 +1,13 @@
 using System.Net;
 using FluentAssertions;
-using Microsoft.AspNetCore.Mvc.Testing;
 
 namespace UserProfile.IntegrationTests;
 
-public class SwaggerTests : IClassFixture<WebApplicationFactory<Program>>
+public class SwaggerTests : IClassFixture<UserProfileApiFactory>
 {
     private readonly HttpClient _client;
 
-    public SwaggerTests(WebApplicationFactory<Program> factory)
+    public SwaggerTests(UserProfileApiFactory factory)
     {
         _client = factory.CreateClient();
     }
